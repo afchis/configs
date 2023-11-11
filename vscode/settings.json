@@ -1,0 +1,65 @@
+{
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "remote.SSH.remotePlatform": {
+    "3090": "linux",
+    "4321": "linux",
+    "12321": "linux",
+    "12345": "linux",
+    "40001": "linux",
+    "40090": "linux",
+    "59999": "linux",
+    "1.m.cluster": "linux",
+    "192.168.143.11": "linux",
+    "192.168.143.48": "linux",
+    "1.m.50001": "linux",
+    "1.m.baumana": "linux",
+    "1.m.artem": "linux",
+    "1.m.3409": "linux",
+    "1.m.cluster.50009": "linux",
+    "1.m.main": "linux",
+    "1.m.50088": "linux",
+    "1.m.40099": "linux",
+    "1.m.40098": "linux",
+    "1.m.50099": "linux"
+  },
+  "editor.fontFamily": "iosevka",
+  "extensions.experimental.affinity": {"asvetliakov.vscode-neovim": 1},
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/afchi/.config/nvim/init.vim",
+  "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+  "vscode-neovim.useWSL": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "settingsSync.ignoredExtensions": [
+    "logerfo.gitlab-notifications"
+  ],
+  "git.autofetch": true,
+  "editor.lineNumbers": "relative",
+  "remote.SSH.configFile": "~/.vs_code_ssh",
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "test_*.py"
+  ],
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.multiCursorModifier": "ctrlCmd",
+  "pythonTestExplorer.testplanEnabled": true,
+  "pythonTestExplorer.testplanPath": "",
+  "pythonTestExplorer.outputs.showOutputsOnRun": true,
+  "pythonTestExplorer.testFramework": "unittest"
+}
