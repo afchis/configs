@@ -3,7 +3,7 @@ RUN apt update
 RUN apt install -y software-properties-common
 COPY . /configs
 RUN add-apt-repository ppa:neovim-ppa/unstable
-RUN apt update
+RUN apt update -y
 RUN apt install -y neovim tmux git curl
 
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
