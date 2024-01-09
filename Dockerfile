@@ -9,8 +9,7 @@ RUN apt install -y neovim tmux git curl
 RUN git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 RUN cp -r /configs/data/home/.tmux.conf ~/.tmux.conf
 
-RUN curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+RUN sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 RUN cp -r /configs/data/home/.config/ ~/.config/
 
 RUN apt install -y python3-pip python-is-python3
