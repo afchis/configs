@@ -1,6 +1,8 @@
 FROM nvidia/cuda:11.6.2-base-ubuntu20.04
 
 ENV TERM xterm-256color
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
 
 RUN apt update
 RUN apt install -y software-properties-common
