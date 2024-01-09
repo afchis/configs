@@ -1,4 +1,7 @@
 FROM nvidia/cuda:11.6.2-base-ubuntu20.04
+
+ENV TERM xterm-256color
+
 RUN apt update
 RUN apt install -y software-properties-common
 COPY . /configs
