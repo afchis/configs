@@ -1,3 +1,4 @@
+apt install software-properties-common
 # install nvim and tmux:
 add-apt-repository ppa:neovim-ppa/unstable
 apt update
