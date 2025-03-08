@@ -1,3 +1,0 @@
-torch==1.13
-torchaudio==0.13
-numpy
